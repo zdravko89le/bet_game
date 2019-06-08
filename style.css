@@ -1,0 +1,83 @@
+body {
+  background-color: #EDF5E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+#game_container {
+	display: flex;
+	justify-content: space-around;
+	height: 800px;
+	width: 800px;
+	border: 2px solid black;
+	padding-top: 20px;
+	background-color: #8EE4AF;
+}
+
+#game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#number, #button_holder, #message_holder, #balance, #bet_amount, #bot_button_holder, #diference, #win_lose_array {
+	margin: 5 5 5 5;
+}
+
+#number {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#diference {
+	font-size: 25px;
+}
+
+#message_win, #message_lose {
+	font-size: 25px;
+}
+
+#hi_button, #low_button, #bot_hi_button, #bot_low_button, #bot_stop_button {
+  	border: none;
+  	color: white;
+  	padding: 10px 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+}
+
+#hi_button, #low_button, #bot_hi_button, #bot_low_button, #bot_stop_button:hover {
+	cursor: pointer;
+}
+
+#hi_button, #bot_hi_button {
+	background-color: green;
+}
+
+#low_button, #bot_low_button {
+	background-color: blue;
+}
+
+#bot_stop_button {
+	background-color: red;
+}
+
+#message_win {
+	background-color: green;
+	color: white;
+	display: none;
+}
+
+#message_lose {
+	background-color: red;
+	color: white;
+	display: none;
+}

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script
+      src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id='game_container'>
+        <div id='game'>
+            <div id='number'> 00000 </div>
+            <div id='button_holder'>
+                <button id='hi_button'> HI </button>
+                <button id='low_button'> LOW </button>
+            </div>
+            <div id='message_holder'>
+                <div id='message_win'> You WIN </div>
+                <div id='message_lose'> You LOSE </div>
+            </div>
+            <!-- <b>Balance:</b> <div id='balance'> 0.0250 </div> -->
+            <b>Bet Amount:</b> <div id='bet_ammount'> 0.00000001 </div>
+            <br/>
+            <b>BIG BET:</b> <div id='big_bet_ammount'></div> 
+        </div>
+        <div id='bot'>
+            <div id='bot_button_holder'>
+                <button id='bot_hi_button' onclick="init('HI')"> HI </button>
+                <button id='bot_low_button' onclick="init('LO')"> LOW </button>
+                <button id='bot_stop_button' onclick="stopBet()"> STOP </button>
+            </div>
+
+            <b> BaseBetAmount </b>
+            <input id='BaseBetAmount' type='text'>
+
+            <b> BigBetAmount </b>
+            <input id='BigBetAmount' type='text'>
+
+            <b> Loosing Strike </b>
+            <input id='loosingStrike' type='text'>
+
+            <b> BigLoseCyclesInRow </b>
+            <input id='BigLoseCyclesInRow' type='text'>
+
+            <b> BigWinsStop </b>
+            <input id='BigWinsStop' type='text'>
+
+            <br />
+            <br />
+
+            <b>Diference:</b><div id='diference'>0</div>
+            <div id='win_lose_array'></div> 
+        </div>
+    </div>
+    
+</body>
+</html>
